@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <newmagento_index_index>
+        <reference name="content">
+            <block type="newmagento/view" name="newmagento" template="mymodule/contact/view.phtml"/>
+        </reference>
+    </newmagento_index_index>
+</layout>

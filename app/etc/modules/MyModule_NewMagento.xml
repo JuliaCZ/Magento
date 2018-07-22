@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MyModule_NewMagento>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MyModule_NewMagento>
+    </modules>
+</config>

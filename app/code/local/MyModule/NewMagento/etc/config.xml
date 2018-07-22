@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+
+    <modules>
+        <MyModule_NewMagento>
+            <version>1.0.0.0</version>
+        </MyModule_NewMagento>
+    </modules>
+
+    <global>
+        <blocks>
+            <newmagento>
+                <class>MyModule_NewMagento_Block</class>
+            </newmagento>
+        </blocks>
+        <models>
+            <newmagento>
+                <class>MyModule_NewMagento_Model</class>
+                <resourceModel>newmagento_resource</resourceModel>
+            </newmagento>
+            <newmagento_resource>
+                <class>MyModule_NewMagento_Model_Resource</class>
+                <entities>
+                    <contact>
+                        <table>my_contact</table>
+                    </contact>
+                </entities>
+            </newmagento_resource>
+        </models>
+    </global>
+
+    <frontend>
+        <routers>
+            <newmagento>
+                <use>standard</use>
+                <args>
+                    <module>MyModule_NewMagento</module>
+                    <frontName>magetalk</frontName>
+                </args>
+            </newmagento>
+        </routers>
+        <layout>
+            <updates>
+                <newmagento>
+                    <file>newmagento.xml</file>
+                </newmagento>
+            </updates>
+        </layout>
+    </frontend>
+
+</config>
