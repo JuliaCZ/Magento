@@ -8,9 +8,9 @@
  */
 class MyModule_NewMagento_Block_View extends Mage_Core_Block_Template
 {
-    public function getRequestedRecord($id)
+    public function getRequestedRecord()
     {
-        return Mage::getModel('newmagento/contact')->load($id);
+        return Mage::getModel('newmagento/contact')->getCollection();
     }
 //    protected function _toHtml()
 //    {
