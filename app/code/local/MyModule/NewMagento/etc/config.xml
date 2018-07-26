@@ -48,4 +48,15 @@
         </layout>
     </frontend>
 
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <my_newmagento before="Mage_Adminhtml">MyModule_NewMagento_Adminhtml</my_newmagento>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
