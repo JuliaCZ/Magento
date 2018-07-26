@@ -10,7 +10,7 @@ class MyModule_NewMagento_Block_View extends Mage_Core_Block_Template
 {
     public function getRequestedRecord()
     {
-        return Mage::getModel('newmagento/contact')->getCollection();
+        return Mage::getResourceModel('newmagento/contact_collection')->getItems();
     }
 //    protected function _toHtml()
 //    {
